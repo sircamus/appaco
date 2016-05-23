@@ -12,6 +12,12 @@ strong { font-weight: 500; }
 
 /******* CUSTOM ******/
 
+.center{
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+}
+
 a.forgot{
 	color: #37474f !important;
 }
@@ -27,6 +33,15 @@ a.forgot:hover{
 
 .logo{
 	max-height:80px;
+}
+
+.txt-cancel{
+	color: #616161;
+}
+
+.txt-cancel:hover{
+	color: #f44336;
+	font-weight: 500;
 }
 
 /*********************/
