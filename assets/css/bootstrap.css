@@ -3551,6 +3551,7 @@ tbody.collapse.in {
   margin: 9px 0;
   overflow: hidden;
   background-color: #e5e5e5;
+  border-top: solid 1px black;
 }
 .dropdown-menu > li > a {
   display: block;

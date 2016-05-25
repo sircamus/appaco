@@ -1,0 +1,130 @@
+body{
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Roboto', sans-serif;
+    background-color: #EEF2F6;
+}
+
+.clear { margin: 5px 0px;}
+
+textarea{ resize: none;}
+
+.center{ text-align: center; margin: 0 auto;}
+
+.footer-menu>li{ 
+	font-size: 12px;
+	display: inline;
+    padding: 0 7px;
+    border-right: 1px solid #ccc;
+}
+
+#username{ font-weight: 300; }
+
+#username:hover{ font-weight: 500; }
+
+.navlogo{
+	height: 40px;
+	margin: 5px 0;
+}
+
+.profilepic{
+	height: 35px;
+	border-radius: 50px;
+	margin: -10px;
+}
+
+.glyphicon-nav{
+	font-size: 22px;
+	color:#FFF !important;
+}
+
+.glyphicon-r{
+	font-size: 18px;
+	color:#ccc !important;
+}
+
+.navbar{ 
+	background-color: #1565c0; 
+	border-style: none; 
+	box-shadow: 0px 2px 10px #888888;
+}
+
+.navbar-nav>.open>a { background-color: #0d47a1 !important; }
+
+.inline{ display: inline-block !important; }
+
+.right{ float: right; }
+
+.red{ color: #f44336; }
+
+.txt-white{ color: #FFFFFF !important; }
+
+.block { display: block !important; }
+
+
+#sidebar.affix-top {
+    position: static;
+    width:262px;
+}
+  
+#sidebar.affix {
+    position: fixed;
+    top:70px;
+	width:262px;
+}
+
+.nav-tabs{ border-bottom: 0px !important;}
+
+.nav-tabs>li.active>a{
+	color: #337AB7 !important;
+    background-color: #FFFFFF !important;
+}
+
+.no-radius{
+	border-radius: 0px !important;
+}
+
+.group-list>li{
+	border-bottom: 1px solid #ccc;
+	list-style: none;
+	padding: 5px 0px 5px 0px !important;
+}
+
+.no-padding { padding: 0 !important;}
+
+.new-btn{
+	border-bottom: 0px !important;
+}
+
+.img-comment{
+	width: 35px;
+	border-radius: 50px;
+}
+
+
+
+
+/********** Media Queries ***********/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	#sidebar.affix, #sidebar.affix-top {width: 222px;} 
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	#leftCol {display: none;} 
+}
+
+@media (max-width: 767px) { 
+	#profileop, #username{ display: none !important; }
+	.profilepic{ margin-right: -5px; margin-top: -10px;}
+	#leftCol {display: none;}
+}
+
+@media (max-width: 415px) { }
+
+
+
+
+
+
+
