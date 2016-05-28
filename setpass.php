@@ -28,28 +28,24 @@
                         <div class="col-sm-6 col-sm-offset-3 form-box">
                         	<div class="form-top">
                         		<div class="form-top-left">
-                        			<h3>Iniciar sesión</h3>
-                            		<p>Escribe tu email y contraseña para ingresar</p>
+                        			<h3>Crear contraseña</h3>
+                            		<p>Escribe tu nueva contraseña, ambos campos deben coincidir</p>
                         		</div>
                         		<div class="form-top-right" >
                         			<img src="assets/images/Acologo.png" alt="Academic Consulting" class="logo">
                         		</div>
                             </div>
                             <div class="form-bottom">
-			                    <form role="form" action="javaScript:validar()" method="post" class="login-form">
+			                    <form role="form" action="setpass.php" method="post" class="login-form">
 			                    	<div class="form-group">
-			                    		<label class="sr-only" for="email">Email:</label>
-			                        	<input type="text" name="email" placeholder="Email" class="form-username form-control" id="email">
+			                    		<label class="sr-only" for="email">Contraseña:</label>
+			                        	<input type="password" name="pass1" placeholder="Contraseña" class="form-password form-control" id="pass1">
 			                        </div>
 			                        <div class="form-group">
-			                        	<label class="sr-only" for="password">Contraseña:</label>
-			                        	<input type="password" name="password" placeholder="Contraseña" class="form-password form-control" id="password">
+			                        	<label class="sr-only" for="password">Repite tu contraseña:</label>
+			                        	<input type="password" name="pass2" placeholder="Repite tu contraseña" class="form-password form-control" id="pass2">
 			                        </div>
-			                        <button type="submit" class="btn">INICIAR SESIÓN</button>
-                                    <div class="form-group txt-right">
-                                    <br/>
-                                        <a href="retrieve.php" class="forgot">Olvidé mi contraseña</a>
-                                    </div>
+			                        <button type="submit" class="btn">TERMINAR</button>
 			                    </form>
 		                    </div>
                         </div>

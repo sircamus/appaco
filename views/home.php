@@ -111,13 +111,6 @@
                     </div>
 
                     <div class="form-group">
-                      <div class="input-group col-md-12">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
-                        <input type="text" class="form-control" id="linkpub" name="linkpub" placeholder="http://www.ejemplo.com">
-                      </div>
-                    </div>
-
-                    <div class="form-group">
                       <div class="form-inline">
                         <div class="input-group">
                           <input type="file" class="form-control filestyle" id="filepub" name="filepub" data-buttonBefore="true" data-buttonText="&nbsp;Examinar..."  data-buttonName="btn-primary" data-iconName="glyphicon glyphicon-paperclip" accept=".pdf, .doc, .docx, .ppt, .pptx, .jpg, .jpeg, .gif, .png">
@@ -176,14 +169,6 @@
                   </div>
 
                   <div class="row">
-                    <div class="col-md-7">
-                      <div class="form-group">
-                        <div class="input-group">
-                          <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
-                          <input type="text" class="form-control" id="linkact" name="linkact" placeholder="http://www.ejemplo.com">
-                        </div>
-                      </div>
-                    </div>
 
                     <div class="col-md-5">
                       <div class="form-group">
@@ -195,6 +180,15 @@
                       </div>
                     </div>
                   </div>
+
+                  <div class="col-md-7">
+                      <div class="form-group">
+                        <select class="form-control" id="periodo" name="periodo">
+                            <option>Periodo 1</option>
+                            <option>Periodo 2</option>
+                        </select>
+                      </div>
+                    </div>
                 </div>
 
                 <div class="form-group">
@@ -238,10 +232,9 @@
             <li class="dropdown pull-right" style="list-style:none;">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-menu-down"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#"><i class="glyphicon glyphicon-eye-open"></i>&nbsp;&nbsp;&nbsp;Ver detalles</a></li>
                   <li><a href="#"><i class="glyphicon glyphicon-remove"></i>&nbsp;&nbsp;&nbsp;Eliminar</a></li>
                   <li role="separator" class="divider block"></li>
-                  <li><a href="#"><i class="glyphicon glyphicon-info-sign"></i>&nbsp;&nbsp;&nbsp;Reportar problema</a></li>
+                  <li><a href="#"><i class="glyphicon glyphicon-info-sign"></i>&nbsp;&nbsp;&nbsp;Reportar un problema</a></li>
                 </ul>
               </li>
           </div>  
@@ -257,7 +250,7 @@
 
           
 
-          <div class="col-md-12 col-sm-12 col-xs-12"><i class="glyphicon glyphicon-r glyphicon-globe"></i>&nbsp;<a href="#"> Link</a></div> <br/>
+          
           <div class="col-md-12 col-sm-12 col-xs-12"><i class="glyphicon glyphicon-r glyphicon-paperclip"></i>&nbsp;<a href="#"> Descargar archivo</a><p/></div>
           <div class="col-md-12 col-sm-12 col-xs-12"><button class="btn btn-primary">Responder</button></div>
         </div>
@@ -279,10 +272,9 @@
             <li class="dropdown pull-right" style="list-style:none;">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-menu-down"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#"><i class="glyphicon glyphicon-eye-open"></i>&nbsp;&nbsp;&nbsp;Ver detalles</a></li>
                   <li><a href="#"><i class="glyphicon glyphicon-remove"></i>&nbsp;&nbsp;&nbsp;Eliminar</a></li>
                   <li role="separator" class="divider block"></li>
-                  <li><a href="#"><i class="glyphicon glyphicon-info-sign"></i>&nbsp;&nbsp;&nbsp;Reportar problema</a></li>
+                  <li><a href="#"><i class="glyphicon glyphicon-info-sign"></i>&nbsp;&nbsp;&nbsp;Reportar un problema</a></li>
                 </ul>
               </li>
           </div>
@@ -294,7 +286,6 @@
 
           &nbsp;
 
-          <div class="col-md-12 col-sm-12 col-xs-12"><i class="glyphicon glyphicon-r glyphicon-globe"></i>&nbsp;<a href="#"> Link</a></div> <br/>
           <div class="col-md-12 col-sm-12 col-xs-12"><i class="glyphicon glyphicon-r glyphicon-paperclip"></i>&nbsp;<a href="#"> Descargar archivo</a></div>  
         </div>
       </div>
@@ -309,7 +300,7 @@
                 <ul class="dropdown-menu">
                   <li><a href="#"><i class="glyphicon glyphicon-remove"></i>&nbsp;&nbsp;&nbsp;Eliminar</a></li>
                   <li role="separator" class="divider block"></li>
-                  <li><a href="#"><i class="glyphicon glyphicon-info-sign"></i>&nbsp;&nbsp;&nbsp;Reportar problema</a></li>
+                  <li><a href="#"><i class="glyphicon glyphicon-info-sign"></i>&nbsp;&nbsp;&nbsp;Reportar un problema</a></li>
                 </ul>
               </li>
           </div>

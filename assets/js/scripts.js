@@ -31,16 +31,14 @@ jQuery(document).ready(function() {
 });
 function validar(){
     var email = $('#email').val() , pass =$('#password').val();
-    $.post('assets/db/login.php',{
+    $.post('include/db/login.php',{
         email:email, pass:pass
     },function (data){
        // alert(data);
             if (data == 1) {         
-                    window.location='views/prueba1.php';
-                    
-
+                    window.location='views/home.php';
             }else{
-                    $('.form-top-left').html("<h3>Iniciar sesión</h3><p>Email o Contraseña incorrectos<img src='assets/images/IconError.png' alt='Error' height=19px></img></p>");
+                    $('#errorLog').html("<div class='alert alert-danger' role='alert'><p><i class='glyphicon glyphicon-remove'></i> Email o contraseña incorrectos</p></div>");
                     $('.login-form input[type="text"], .login-form input[type="password"]').addClass('input-error');
             }
     });
@@ -49,15 +47,17 @@ function validar(){
 
 function sendpass(){
     var email = $('#email').val();
-    $.post('assets/db/recovery.php',{
+    $.post('include/db/recovery.php',{
         email:email
     },function (data1){
        // alert(data1);
         if (data1==0) {
-            $('.form-top-left').html("<h3>Recuperar contraseña</h3><p>El email no se encuentra registrado<img src='assets/images/IconError.png' alt='Error' height=19px></img></p>");
+            $('#errorLog').html("<div class='alert alert-danger' role='alert'><p><i class='glyphicon glyphicon-remove'></i> El email indicado no existe, verifícalo nuevamente</p></div>");
             $('.login-form input[type="text"]').addClass('input-error');
         }else{
-            $('.form-top-left').html("<h3>Recuperar contraseña</h3><p>Email enviado</p>");
+            $('#errorLog').html("<div class='alert alert-success' role='alert'><p><i class='glyphicon glyphicon-ok'></i> Email enviado correctamente</p></div>");
+            $('#btn-enviar').html("<a href='index.php' class='btn white-txt'>INICIAR SESIÓN</a>");
+            $('')
         }
     });
 }

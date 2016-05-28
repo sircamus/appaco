@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
+    	<meta http-equiv="Expires" content="0" /><!--++-->
+        <meta http-equiv="Pragma" content="no-cache" /><!--++-->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Recuperar Contraseña | Academic Consulting</title>
+        <title>Iniciar Sesión | Academic Consulting</title>
 
         <link rel="shortcut icon" href="assets/images/favicon.png">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
@@ -26,23 +28,35 @@
                         <div class="col-sm-6 col-sm-offset-3 form-box">
                         	<div class="form-top">
                         		<div class="form-top-left">
-                        			<h3>Recuperar contraseña</h3>
-                            		<p>Escribe tu email, enviaremos tu clave de acceso</p>
+                        			<h3>Iniciar sesión</h3>
+                            		<p>Escribe tu email y contraseña para ingresar</p>
                         		</div>
                         		<div class="form-top-right" >
                         			<img src="assets/images/Acologo.png" alt="Academic Consulting" class="logo">
                         		</div>
                             </div>
                             <div class="form-bottom">
-			                    <form role="form" action="javaScript:sendpass()" method="post" class="login-form">
+			                    <form role="form" action="javaScript:validar()" method="post" class="login-form">
                                 <div id="errorLog"></div>
 			                    	<div class="form-group">
 			                    		<label class="sr-only" for="email">Email:</label>
 			                        	<input type="text" name="email" placeholder="Email" class="form-username form-control" id="email">
 			                        </div>
-                                    <div class="form-group center"> 
-                                        <button type="submit" class="btn" id="btn-enviar">ENVIAR</button> <br/> <br/>   
-                                        <a href="index.php" class="txt-cancel txt-right">Cancelar</a>
+			                        <div class="form-group">
+			                        	<label class="sr-only" for="password">Contraseña:</label>
+			                        	<input type="password" name="password" placeholder="Contraseña" class="form-password form-control" id="password">
+			                        </div>
+			                        <button type="submit" class="btn">INICIAR SESIÓN</button>
+                                    <div class="form-group">
+                                    <br/>
+                                        <div class="row">
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                                            <a href="retrieve.php" class="forgot">Olvidé mi contraseña</a>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                                            <a href="newuser.php" class="newuser pull-right">Nuevo usuario</a>
+                                        </div>
+                                        </div>
                                     </div>
 			                    </form>
 		                    </div>
@@ -56,5 +70,7 @@
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/jquery.backstretch.min.js"></script>
         <script src="assets/js/scripts.js"></script>
+        <script src="assets/js/scripts.js"></script>
+        <script type="text/javascript">  if(history.forward(1)){location.replace( history.forward(1) );}</script>
     </body>
 </html>
