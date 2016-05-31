@@ -1,7 +1,7 @@
 body{
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/	
     background-color: #EEF2F6;
 }
 
@@ -59,6 +59,10 @@ textarea{ resize: none;}
 
 .txt-white{ color: #FFFFFF !important; }
 
+.txt-black{ color: #000000 !important; }
+
+.txt-gray{ color: #AAA !important; }
+
 .block { display: block !important; }
 
 
@@ -92,6 +96,8 @@ textarea{ resize: none;}
 
 .no-padding { padding: 0 !important;}
 
+.no-margin { margin: 0 !important;}
+
 .new-btn{
 	border-bottom: 0px !important;
 }
@@ -101,6 +107,7 @@ textarea{ resize: none;}
 	border-radius: 50px;
 }
 
+<<<<<<< HEAD
 .customicon{ padding-left: 5px; padding-right: 5px; font-size: 18px; } 
 
 
@@ -114,7 +121,30 @@ textarea{ resize: none;}
       font-weight: normal;
       font-style: normal;
     }
+=======
+.padding-sides{ padding-left: 5px; padding-right: 5px; font-size: 18px; } 
 
+.padding-tb{ padding-top: 10px; padding-bottom: 20px;}
+
+
+div.fill {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+div.fill img {
+    flex-shrink:0;
+    /*min-width:100%;*/
+    max-height:100%;
+}
+>>>>>>> master
+
+.border-b{
+	border-bottom: solid 1px #ccc;
+}
 
 
 /********** Media Queries ***********/
@@ -124,13 +154,16 @@ textarea{ resize: none;}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-	#leftCol {display: none;} 
+	#leftCol, #profilepic {display: none;} 
+	.no-hidde{display: block !important;}
 }
 
 @media (max-width: 767px) { 
-	#profileop, #username{ display: none !important; }
+	#profileop, #username, #profilepic{ display: none !important; }
 	.profilepic{ margin-right: -5px; margin-top: -10px;}
 	#leftCol {display: none;}
+	.no-hidde{display: block !important;}
+	#buscador {display: none;}
 }
 
 @media (max-width: 415px) { }

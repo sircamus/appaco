@@ -26,6 +26,7 @@
     $('#datetimepicker1').datetimepicker();
   });
 </script>
+<<<<<<< HEAD
 <script type="text/javascript">
   function nobackbutton(){
    window.location.hash="no-back-button";
@@ -33,5 +34,7 @@
    window.onhashchange=function(){window.location.hash="no-back-button";}
 }
 </script>
+=======
+>>>>>>> master
 </body>
 </html>

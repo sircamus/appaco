@@ -34,8 +34,12 @@
                         		</div>
                             </div>
                             <div class="form-bottom">
+<<<<<<< HEAD
 			                    <form role="form" action="javascript:newuser();" method="post" class="login-form">
                                     <div id="errorLog"></div>
+=======
+			                    <form role="form" action="checkuser.php" method="post" class="login-form">
+>>>>>>> master
 			                    	<div class="form-group">
 			                    		<label class="sr-only" for="email">Email:</label>
 			                        	<input type="text" name="email" placeholder="Email" class="form-username form-control" id="email">

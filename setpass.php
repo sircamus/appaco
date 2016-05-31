@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
+<<<<<<< HEAD
 
+=======
+    	<meta http-equiv="Expires" content="0" /><!--++-->
+        <meta http-equiv="Pragma" content="no-cache" /><!--++-->
+>>>>>>> master
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,10 +40,15 @@
                         		</div>
                             </div>
                             <div class="form-bottom">
+<<<<<<< HEAD
 			                    <form role="form" action="javascript:nuevacontraseña();" method="post" class="login-form">
                                     <div id="errorLog"></div>
 			                    	<div class="form-group">
                                         <input type="hidden" id="hidden" value="<?php echo $_GET['email']; ?>"> 
+=======
+			                    <form role="form" action="setpass.php" method="post" class="login-form">
+			                    	<div class="form-group">
+>>>>>>> master
 			                    		<label class="sr-only" for="email">Contraseña:</label>
 			                        	<input type="password" name="pass1" placeholder="Contraseña" class="form-password form-control" id="pass1">
 			                        </div>
@@ -59,7 +69,12 @@
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/jquery.backstretch.min.js"></script>
         <script src="assets/js/scripts.js"></script>
+<<<<<<< HEAD
         
         
+=======
+        <script src="assets/js/scripts.js"></script>
+        <script type="text/javascript">  if(history.forward(1)){location.replace( history.forward(1) );}</script>
+>>>>>>> master
     </body>
 </html>

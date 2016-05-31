@@ -34,6 +34,7 @@ function validar(){
     $.post('include/db/login.php',{
         email:email, pass:pass
     },function (data){
+<<<<<<< HEAD
         //alert(data);
             if (data==0) {
                 window.location='setpass.php?email='+email;
@@ -52,6 +53,14 @@ function validar(){
                     }
                 }
 
+=======
+       // alert(data);
+            if (data == 1) {         
+                    window.location='views/home.php';
+            }else{
+                    $('#errorLog').html("<div class='alert alert-danger' role='alert'><p><i class='glyphicon glyphicon-remove'></i> Email o contraseña incorrectos</p></div>");
+                    $('.login-form input[type="text"], .login-form input[type="password"]').addClass('input-error');
+>>>>>>> master
             }
     });
 
@@ -69,7 +78,10 @@ function sendpass(){
         }else{
             $('#errorLog').html("<div class='alert alert-success' role='alert'><p><i class='glyphicon glyphicon-ok'></i> Email enviado correctamente</p></div>");
             $('#btn-enviar').html("<a href='index.php' class='btn white-txt'>INICIAR SESIÓN</a>");
+<<<<<<< HEAD
             $('')
+=======
+>>>>>>> master
         }
     });
 }
