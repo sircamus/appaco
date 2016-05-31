@@ -57,7 +57,6 @@ function sendpass(){
         }else{
             $('#errorLog').html("<div class='alert alert-success' role='alert'><p><i class='glyphicon glyphicon-ok'></i> Email enviado correctamente</p></div>");
             $('#btn-enviar').html("<a href='index.php' class='btn white-txt'>INICIAR SESIÓN</a>");
-            $('')
         }
     });
 }
