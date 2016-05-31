@@ -26,5 +26,15 @@
     $('#datetimepicker1').datetimepicker();
   });
 </script>
+<<<<<<< HEAD
+=======
+<script type="text/javascript">
+  function nobackbutton(){
+   window.location.hash="no-back-button";
+   window.location.hash="Again-No-back-button"; //chrome
+   window.onhashchange=function(){window.location.hash="no-back-button";}
+}
+</script>
+>>>>>>> 75fd9d88017730f574deffd8886455eb898f73f0
 </body>
 </html>

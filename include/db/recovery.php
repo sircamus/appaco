@@ -9,6 +9,7 @@ if ($row==true) {
 		$asunto = 'Academic Consulting Datos de recuperación de cuenta';
 $mail_contacto=$_POST["email"];
 require_once('../bin/class.phpmailer.php');
+
 include("../bin/class.smtp.php");
 $mail = new PHPMailer();
 $mail->IsSMTP();                            // telling the class to use SMTP
@@ -67,9 +68,6 @@ if(!$mail->Send()) {
 }
 //################################################################################################
 end:
-
-
-
 
 	
 }
