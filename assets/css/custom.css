@@ -101,6 +101,19 @@ textarea{ resize: none;}
 	border-radius: 50px;
 }
 
+.customicon{ padding-left: 5px; padding-right: 5px; font-size: 18px; } 
+
+
+@font-face {
+      font-family: 'customicon';
+      src: url('../fonts/customicon.eot?58406115');
+      src: url('../fonts/customicon.eot?58406115#iefix') format('embedded-opentype'),
+           url('../fonts/customicon.woff?58406115') format('woff'),
+           url('../fonts/customicon.ttf?58406115') format('truetype'),
+           url('../fonts/customicon.svg?58406115#customicon') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
 
 
 
