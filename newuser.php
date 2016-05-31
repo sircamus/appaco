@@ -26,22 +26,22 @@
                         <div class="col-sm-6 col-sm-offset-3 form-box">
                         	<div class="form-top">
                         		<div class="form-top-left">
-                        			<h3>Recuperar contraseña</h3>
-                            		<p>Escribe tu email, enviaremos tu clave de acceso</p>
+                        			<h3>Nuevo usuario</h3>
+                            		<p>Escribe tu email</p>
                         		</div>
                         		<div class="form-top-right" >
                         			<img src="assets/images/Acologo.png" alt="Academic Consulting" class="logo">
                         		</div>
                             </div>
                             <div class="form-bottom">
-			                    <form role="form" action="javaScript:sendpass()" method="post" class="login-form">
-                                <div id="errorLog"></div>
+			                    <form role="form" action="javascript:newuser();" method="post" class="login-form">
+                                    <div id="errorLog"></div>
 			                    	<div class="form-group">
 			                    		<label class="sr-only" for="email">Email:</label>
 			                        	<input type="text" name="email" placeholder="Email" class="form-username form-control" id="email">
 			                        </div>
                                     <div class="form-group center"> 
-                                        <button type="submit" class="btn" id="btn-enviar">ENVIAR</button> <br/> <br/>   
+                                        <button type="submit" class="btn">CONTINUAR</button> <br/> <br/>   
                                         <a href="index.php" class="txt-cancel txt-right">Cancelar</a>
                                     </div>
 			                    </form>

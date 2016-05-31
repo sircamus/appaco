@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Recuperar Contraseña | Academic Consulting</title>
+        <title>Iniciar Sesión | Academic Consulting</title>
 
         <link rel="shortcut icon" href="assets/images/favicon.png">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
@@ -26,24 +27,26 @@
                         <div class="col-sm-6 col-sm-offset-3 form-box">
                         	<div class="form-top">
                         		<div class="form-top-left">
-                        			<h3>Recuperar contraseña</h3>
-                            		<p>Escribe tu email, enviaremos tu clave de acceso</p>
+                        			<h3>Crear contraseña</h3>
+                            		<p>Escribe tu nueva contraseña, ambos campos deben coincidir</p>
                         		</div>
                         		<div class="form-top-right" >
                         			<img src="assets/images/Acologo.png" alt="Academic Consulting" class="logo">
                         		</div>
                             </div>
                             <div class="form-bottom">
-			                    <form role="form" action="javaScript:sendpass()" method="post" class="login-form">
-                                <div id="errorLog"></div>
+			                    <form role="form" action="javascript:nuevacontraseña();" method="post" class="login-form">
+                                    <div id="errorLog"></div>
 			                    	<div class="form-group">
-			                    		<label class="sr-only" for="email">Email:</label>
-			                        	<input type="text" name="email" placeholder="Email" class="form-username form-control" id="email">
+                                        <input type="hidden" id="hidden" value="<?php echo $_GET['email']; ?>"> 
+			                    		<label class="sr-only" for="email">Contraseña:</label>
+			                        	<input type="password" name="pass1" placeholder="Contraseña" class="form-password form-control" id="pass1">
 			                        </div>
-                                    <div class="form-group center"> 
-                                        <button type="submit" class="btn" id="btn-enviar">ENVIAR</button> <br/> <br/>   
-                                        <a href="index.php" class="txt-cancel txt-right">Cancelar</a>
-                                    </div>
+			                        <div class="form-group">
+			                        	<label class="sr-only" for="password">Repite tu contraseña:</label>
+			                        	<input type="password" name="pass2" placeholder="Repite tu contraseña" class="form-password form-control" id="pass2">
+			                        </div>
+			                        <button type="submit" class="btn">TERMINAR</button>
 			                    </form>
 		                    </div>
                         </div>
@@ -56,5 +59,7 @@
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/jquery.backstretch.min.js"></script>
         <script src="assets/js/scripts.js"></script>
+        
+        
     </body>
 </html>
