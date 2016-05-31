@@ -18,8 +18,15 @@ strong { font-weight: 500; }
 	display: block;
 }
 
-a.forgot{
+a.forgot, a.newuser{
 	color: #37474f !important;
+	font-size: 14px;
+}
+
+
+a.newuser:hover{
+	color: #1565C0 !important;
+	font-weight: 500;
 }
 
 
@@ -42,6 +49,15 @@ a.forgot:hover{
 .txt-cancel:hover{
 	color: #f44336;
 	font-weight: 500;
+}
+
+.white-txt{
+	color: #FFF;
+	display: block !important;
+}
+
+.white-txt:hover{
+	color: #FFF;
 }
 
 /*********************/
