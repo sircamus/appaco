@@ -126,10 +126,19 @@ div.fill img {
     max-height:100%;
 }
 
-.border-b{
-	border-bottom: solid 1px #ccc;
+.border-b{ border-bottom: solid 1px #ccc; }
+
+.wide img { width:100%; }
+
+.post-title{
+	color: #FFF;
+	text-shadow: 1px 1px #222;
 }
 
+
+.post-title:hover{
+	color: #FFF !important;
+}
 
 /********** Media Queries ***********/
 
